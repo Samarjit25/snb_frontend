@@ -1,0 +1,142 @@
+form {
+  text-align: left
+}
+
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.6rem;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* ✅ Allow scroll if needed */
+  padding: 7rem;
+  
+  /* Optional: Give breathing space on smaller screens */
+}
+
+
+/* Container Styling */
+.container {
+  background-color: #fff;
+  max-width: 40rem;
+  width: 100%;
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding-top: 2rem;
+  transform: scale(0.88);
+  transform-origin: top center;
+}
+
+/* Typography */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #222;
+  text-align: center;
+  /* 👈 Add this line */
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin: 2rem 0 1rem;
+  color: #444;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.error {
+  color: #e63946;
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+}
+
+/* Form Elements */
+input {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Button */
+button {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Link */
+a {
+  color: #0077cc;
+  text-decoration: underline;
+  font-weight: 600;
+
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer text under button */
+.footer-text {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+  color: #555;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  transition: border 0.3s ease;
+  background-color: #f9fafb;
+}
+.loginMsg{
+  padding-top: .5rem;
+}

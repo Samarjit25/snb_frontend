@@ -4,7 +4,8 @@ import styles from '../styles/HomePage.module.scss';
 import landingImg from '../assets/landing.png';
 
 
-
+// check this part. hardcoded for now
+// auth logic should be implemented
 const isLoggedIn = localStorage.getItem('userLoggedIn') === 'false';
 
 

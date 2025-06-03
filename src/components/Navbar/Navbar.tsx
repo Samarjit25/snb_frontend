@@ -10,14 +10,14 @@ const Navbar = () => {
     const [showDropdown, setShowDropdown] = useState(false);
     const navigate = useNavigate();
 
-    // ✅ Check login status on mount
+    
     useEffect(() => {
-        const token = localStorage.getItem('token'); // Or whatever you use
-        setIsLoggedIn(!!token); // Set true if token exists
+        const token = localStorage.getItem('token'); 
+        setIsLoggedIn(!!token); 
     }, []);
 
     const handleLogout = () => {
-        localStorage.removeItem('token'); // Clear token
+        localStorage.removeItem('token'); 
         setIsLoggedIn(false);
         setShowDropdown(false);
         navigate('/login');
@@ -27,12 +27,6 @@ const Navbar = () => {
         <nav className={style.navbar}>
             <div className={style.logo}>MyApp</div>
 
-            {/* <div className={`${style.links} ${showMenu ? style.mobileMenu : ''}`}>
-        <Link to="/home" onClick={() => setShowMenu(false)}>Home</Link>
-        <Link to="/about" onClick={() => setShowMenu(false)}>About</Link>
-        <Link to="/addclass" onClick={() => setShowMenu(false)}>Add Class</Link>
-        <Link to="/schedule" onClick={() => setShowMenu(false)}>Schedule</Link>
-      </div> */}
             <div className={`${style.links} ${showMenu ? style.mobileMenu : ''}`}>
                 <div className={style.linkWrapper}><NavLink to="/home" className={({ isActive }) => isActive ? style.active : ''} onClick={() => setShowMenu(false)}>Home</NavLink></div>
                 <div className={style.linkWrapper}><NavLink to="/about" className={({ isActive }) => isActive ? style.active : ''} onClick={() => setShowMenu(false)}>About</NavLink></div>

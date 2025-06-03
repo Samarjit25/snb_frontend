@@ -26,7 +26,7 @@ export const useClassContext = () => {
 export const ClassProvider = ({ children }: { children: ReactNode }) => {
   const [classList, setClassList] = useState<ClassItem[]>([]);
 
-  // Load from localStorage on first render
+
   useEffect(() => {
     const stored = localStorage.getItem('classList');
     if (stored) {
@@ -34,7 +34,7 @@ export const ClassProvider = ({ children }: { children: ReactNode }) => {
     }
   }, []);
 
-  // Save to localStorage on changes
+  
   useEffect(() => {
     localStorage.setItem('classList', JSON.stringify(classList));
   }, [classList]);

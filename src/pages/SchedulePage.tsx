@@ -34,7 +34,7 @@ const Dashboard: React.FC = () => {
 
       {/* Class List */}
       <div className={style.classList}>
-        {/* <h2>{selectedDay}</h2> */}
+        
         
         {classesForDay.length === 0 ? (
           <p className={style.noClasses}>No classes scheduled for {selectedDay}. Enjoy your day!</p>

@@ -4,9 +4,9 @@ import { useClassContext } from '../ClassContext';
 import style from '../styles/DiscussionPage.module.scss';
 
 const ClassDiscussion: React.FC = () => {
-  const { classCode } = useParams(); // get classCode from route
-  const { classList } = useClassContext(); // get class list from context
-  const currentClass = classList.find(cls => cls.subject === classCode); // find the class
+  const { classCode } = useParams(); 
+  const { classList } = useClassContext(); 
+  const currentClass = classList.find(cls => cls.subject === classCode); 
 
   const [discussion, setDiscussion] = useState('');
   const [discussionList, setDiscussionList] = useState<string[]>([]);

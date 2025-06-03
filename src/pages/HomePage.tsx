@@ -4,7 +4,7 @@ import styles from '../styles/HomePage.module.scss';
 import landingImg from '../assets/landing.png';
 
 
-// change this in backend the login logic
+
 const isLoggedIn = localStorage.getItem('userLoggedIn') === 'false';
 
 

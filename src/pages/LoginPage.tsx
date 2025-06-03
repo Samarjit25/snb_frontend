@@ -15,10 +15,10 @@ const LoginPage = () => {
     e.preventDefault();
     e.stopPropagation();
 
-    // Regular expression for basic email validation
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.com$/;
 
-    // Validation checks
+  
     if (!username || !email || !password) {
       setMessage('All fields are required.');
       return;
@@ -34,8 +34,7 @@ const LoginPage = () => {
       return;
     }
 
-    // If all validations pass
-    // setMessage(`Welcome, ${username}!`);
+
 
     setTimeout(() => {
       navigate('/addclass');

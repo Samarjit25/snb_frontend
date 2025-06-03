@@ -28,7 +28,7 @@ const ClassForm = () => {
         }
 
         addClass({ subject, day, startTime, endTime, location, notes });
-        navigate('/schedule'); // Redirect to schedule after adding class
+        navigate('/schedule'); 
     };
 
     return (

@@ -21,13 +21,12 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  /* ✅ Allow scroll if needed */
   padding: 2rem;
-  /* Optional: Give breathing space on smaller screens */
+ 
 }
 
 
-/* Container Styling */
+
 .container {
   background-color: #fff;
   max-width: 40rem;
@@ -37,13 +36,13 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Typography */
+
 h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
   color: #222;
   text-align: center;
-  /* 👈 Add this line */
+
 }
 
 
@@ -66,7 +65,7 @@ label {
   margin-top: 0.5rem;
 }
 
-/* Form Elements */
+
 input {
   width: 100%;
   margin-top: 0.5rem;
@@ -82,7 +81,7 @@ input:focus {
   outline: none;
 }
 
-/* Button */
+
 button {
   width: 100%;
   margin-top: 2rem;

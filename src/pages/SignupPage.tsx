@@ -14,7 +14,6 @@ const SignupPage = () => {
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
   const [error, setError] = useState('');
-  // const [showSuccessMsg, setShowSuccessMsg] = useState(false);
 
   const register = (e: React.MouseEvent) => {
   e.preventDefault();
@@ -41,7 +40,7 @@ const SignupPage = () => {
     return;
   }
 
-  // setShowSuccessMsg(true);
+
   setUsername('');
   setEmail('');
   setScholarId('');
@@ -116,11 +115,7 @@ const SignupPage = () => {
         </button>
       </form>
 
-      {/* {showSuccessMsg && (
-        <div className={style.success}>
-          You have signed up! Please <Link to="/login">login</Link>
-        </div>
-      )} */} 
+    
 
       <div className={style.loginMsg}>
         Already have an account? <Link to="/login">Login</Link>
